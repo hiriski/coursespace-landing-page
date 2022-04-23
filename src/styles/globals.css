@@ -1,16 +1,49 @@
-html,
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: var(--color-background);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: var(--color-background);
+  border-radius: 10px;
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* DONT SET BACKGROUND COLOR RIGHT HERE! */
+  /* background-color: var(--color-background); */
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@-webkit-keyframes click_animation {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  to {
+    -webkit-transform: scale(5);
+    transform: scale(5);
+    opacity: 0;
+  }
 }
 
-* {
-  box-sizing: border-box;
+@keyframes click_animation {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  to {
+    -webkit-transform: scale(5);
+    transform: scale(5);
+    opacity: 0;
+  }
 }

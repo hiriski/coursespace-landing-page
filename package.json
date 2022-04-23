@@ -9,14 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/cache": "^11.7.1",
+    "@emotion/react": "^11.9.0",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.8.1",
+    "@mui/icons-material": "^5.6.2",
+    "@mui/material": "^5.6.2",
     "next": "12.1.5",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-dom": "18.0.0",
+    "react-scroll": "^1.8.7",
+    "react-slick": "^0.29.0"
   },
   "devDependencies": {
     "@types/node": "17.0.25",
     "@types/react": "18.0.6",
     "@types/react-dom": "18.0.2",
+    "@types/react-scroll": "^1.8.3",
+    "@types/react-slick": "^0.23.8",
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "@typescript-eslint/parser": "^5.20.0",
     "eslint": "8.14.0",
