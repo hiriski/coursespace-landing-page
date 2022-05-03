@@ -59,13 +59,13 @@ const StyledDots = styled('ul')(({ theme }) => ({
 
 const HomeOurMentors: FC = () => {
   const { breakpoints } = useTheme()
-  const match = useMediaQuery(breakpoints.up('sm'))
+  const matchMobileView = useMediaQuery(breakpoints.down('md'))
 
   const sliderConfig: Settings = {
     infinite: true,
     // autoplay: true,
     speed: 300,
-    slidesToShow: match ? 3 : 1,
+    slidesToShow: matchMobileView ? 1 : 3,
     slidesToScroll: 1,
     prevArrow: <SliderArrow type="prev" />,
     nextArrow: <SliderArrow type="next" />,
@@ -80,9 +80,13 @@ const HomeOurMentors: FC = () => {
     <Box
       id="mentors"
       sx={{
-        py: {
-          xs: 5,
-          md: 7,
+        pt: {
+          xs: 6,
+          md: 8,
+        },
+        pb: {
+          xs: 8,
+          md: 12,
         },
         backgroundColor: '#ecf3f3',
       }}

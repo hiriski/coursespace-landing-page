@@ -34,8 +34,10 @@ const exps: Array<Exp> = [
 const ExpItem: FC<ExpItemProps> = ({ item }) => {
   const { value, label } = item
   return (
-    <Box sx={{ textAlign: 'center' }}>
-      <Typography sx={{ color: 'secondary.main', mb: 2, fontSize: { xs: 34, md: 44 }, fontWeight: 'bold' }}>
+    <Box sx={{ textAlign: 'center', mb: { xs: 1, md: 0 } }}>
+      <Typography
+        sx={{ color: 'secondary.main', mb: { xs: 1, md: 2 }, fontSize: { xs: 34, md: 44 }, fontWeight: 'bold' }}
+      >
         {value}
       </Typography>
       <Typography color="text.secondary" variant="h5">
@@ -49,7 +51,7 @@ const HomeHero: FC = () => {
   return (
     <Box id="hero" sx={{ backgroundColor: 'background.paper', position: 'relative', pt: 4, pb: { xs: 8, md: 10 } }}>
       <Container maxWidth="lg">
-        <Grid container spacing={0} sx={{ flexDirection: { xs: 'column-reverse', md: 'unset' } }}>
+        <Grid container spacing={0} sx={{ flexDirection: { xs: 'column', md: 'unset' } }}>
           <Grid item xs={12} md={7}>
             <Box
               sx={{
@@ -65,7 +67,7 @@ const HomeHero: FC = () => {
                   component="h2"
                   sx={{
                     position: 'relative',
-                    fontSize: { xs: 42, md: 72 },
+                    fontSize: { xs: 40, md: 72 },
                     letterSpacing: 1.5,
                     fontWeight: 'bold',
                     lineHeight: 1.3,
@@ -85,10 +87,10 @@ const HomeHero: FC = () => {
                     <Box
                       sx={{
                         position: 'absolute',
-                        top: 34,
+                        top: { xs: 24, md: 34 },
                         left: 2,
                         transform: 'rotate(3deg)',
-                        '& img': { width: 210, height: 'auto' },
+                        '& img': { width: { xs: 146, md: 210 }, height: 'auto' },
                       }}
                     >
                       {/* eslint-disable-next-line */}
@@ -106,7 +108,7 @@ const HomeHero: FC = () => {
                         position: 'absolute',
                         top: -16,
                         right: -21,
-                        width: 30,
+                        width: { xs: 22, md: 30 },
                         height: 'auto',
                       },
                     }}
@@ -160,7 +162,7 @@ const HomeHero: FC = () => {
               sx={{
                 position: 'absolute',
                 bottom: 30,
-                left: -150,
+                left: { xs: 0, md: -150 },
                 boxShadow: 1,
                 borderRadius: 3,
                 px: 2,

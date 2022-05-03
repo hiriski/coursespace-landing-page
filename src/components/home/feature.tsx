@@ -47,7 +47,7 @@ const HomeFeature: FC = () => {
                 sx={{
                   position: 'absolute',
                   top: -36,
-                  right: -36,
+                  right: { xs: 0, md: -36 },
                   boxShadow: 2,
                   borderRadius: 1,
                   px: 2.2,
@@ -84,7 +84,7 @@ const HomeFeature: FC = () => {
                 sx={{
                   position: 'absolute',
                   bottom: -12,
-                  left: -24,
+                  left: { xs: 0, md: -24 },
                   boxShadow: 2,
                   borderRadius: 1,
                   px: 2.2,
@@ -168,10 +168,10 @@ const HomeFeature: FC = () => {
                 <Box
                   sx={{
                     position: 'absolute',
-                    top: 28,
+                    top: { xs: 20, md: 28 },
                     transform: 'rotate(3deg)',
                     left: 2,
-                    '& img': { width: 175, height: 'auto' },
+                    '& img': { width: { xs: 140, md: 175 }, height: 'auto' },
                   }}
                 >
                   {/* eslint-disable-next-line @next/next/no-img-element */}

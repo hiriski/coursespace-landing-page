@@ -26,7 +26,7 @@ const SliderArrow: FC<SliderArrowArrow> = (props) => {
         backgroundColor: 'background.paper',
         color: 'primary.main',
         '&:hover': { backgroundColor: 'primary.main', color: 'primary.contrastText' },
-        bottom: '-28px !important',
+        bottom: { xs: '-70px !important', md: '-28px !important' },
         left: 'unset !important',
         right: type === 'prev' ? '60px !important' : '0 !important',
         zIndex: 10,
@@ -60,13 +60,13 @@ const StyledDots = styled('ul')(({ theme }) => ({
 
 const HomePopularCourse: FC = () => {
   const { breakpoints } = useTheme()
-  const match = useMediaQuery(breakpoints.up('sm'))
+  const matchMobileView = useMediaQuery(breakpoints.down('md'))
 
   const sliderConfig: Settings = {
     infinite: true,
     autoplay: true,
     speed: 300,
-    slidesToShow: match ? 3 : 1,
+    slidesToShow: matchMobileView ? 1 : 3,
     slidesToScroll: 1,
     prevArrow: <SliderArrow type="prev" />,
     nextArrow: <SliderArrow type="next" />,
@@ -81,22 +81,27 @@ const HomePopularCourse: FC = () => {
     <Box
       id="popular-course"
       sx={{
-        py: {
-          xs: 4,
+        pt: {
+          xs: 6,
           md: 8,
         },
-        pb: {
-          xs: 10,
-          md: 16,
-        },
+        pb: 14,
         backgroundColor: 'background.default',
       }}
     >
       <Container maxWidth="lg">
         <Grid container spacing={2}>
           <Grid item xs={12} md={3}>
-            <Box sx={{ height: '100%', width: { xs: '100%', md: '90%' }, display: 'flex', alignItems: 'center' }}>
-              <Typography variant="h1" sx={{ mt: -5, fontSize: { xs: 32, md: 48 } }}>
+            <Box
+              sx={{
+                height: '100%',
+                width: { xs: '100%', md: '90%' },
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: { xs: 'center', md: 'flex-start' },
+              }}
+            >
+              <Typography variant="h1" sx={{ mt: { xs: 0, md: -5 }, fontSize: { xs: 30, md: 48 } }}>
                 Most Popular Courses
               </Typography>
             </Box>

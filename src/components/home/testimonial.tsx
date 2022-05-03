@@ -27,7 +27,7 @@ const SliderArrow: FC<SliderArrowArrow> = (props) => {
         backgroundColor: 'background.paper',
         color: 'primary.main',
         '&:hover': { backgroundColor: 'primary.main', color: 'primary.contrastText' },
-        bottom: '64px !important',
+        bottom: { xs: '-28px !important', md: '64px !important' },
         left: 'unset !important',
         right: type === 'prev' ? '90px !important' : '30px !important',
         zIndex: 10,
@@ -63,7 +63,7 @@ const HomeTestimonial: FC = () => {
   }
 
   return (
-    <Box id="testimonial" sx={{ pb: { xs: 8, md: 10 }, backgroundColor: 'background.paper' }}>
+    <Box id="testimonial" sx={{ pb: { xs: 6, md: 10 }, backgroundColor: 'background.paper' }}>
       <Container>
         <Grid container spacing={5}>
           <Grid item xs={12} md={6}>
@@ -90,7 +90,14 @@ const HomeTestimonial: FC = () => {
                 }}
               >
                 Students{' '}
-                <Box sx={{ position: 'absolute', top: 28, left: 2, '& img': { width: 175, height: 'auto' } }}>
+                <Box
+                  sx={{
+                    position: 'absolute',
+                    top: { xs: 20, md: 28 },
+                    left: 2,
+                    '& img': { width: { xs: 130, md: 175 }, height: 'auto' },
+                  }}
+                >
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/images/headline-curve.svg" alt="Headline curve" />
                 </Box>
@@ -106,7 +113,7 @@ const HomeTestimonial: FC = () => {
               </Slider>
             </StyledSlickContainer>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} sx={{ display: { xs: 'none', md: 'block' } }}>
             <Box sx={{ width: { xs: '100%', md: '90%' } }}>
               <Image src="/images/home-testimonial.png" width={520} height={540} quality={97} alt="Testimonial img" />
             </Box>
