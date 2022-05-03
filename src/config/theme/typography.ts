@@ -1,7 +1,7 @@
 import { TypographyOptions } from '@mui/material/styles/createTypography'
 
 export const fontFamily = [
-  '"Poppins",-apple-system, BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"',
+  '"Cabin",-apple-system, BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"',
 ].join(',')
 
 const headingLineHeight = 1.4
@@ -9,50 +9,50 @@ const headingLineHeight = 1.4
 const typography: TypographyOptions = {
   fontFamily,
   fontWeightLight: 400,
-  fontWeightRegular: 500,
+  fontWeightRegular: 400,
   fontWeightMedium: 600,
   fontWeightBold: 700,
   h1: {
-    fontWeight: 700,
     fontSize: 34,
     lineHeight: headingLineHeight,
+    fontWeight: 700,
   },
   h2: {
-    fontWeight: 700,
-    fontSize: 30,
+    fontSize: 28,
     lineHeight: headingLineHeight,
+    fontWeight: 700,
   },
   h3: {
-    fontSize: 28,
-    fontWeight: 700,
+    fontSize: 24,
     lineHeight: headingLineHeight,
+    fontWeight: 700,
   },
   h4: {
-    fontSize: 24,
-    fontWeight: 700,
+    fontSize: 22,
     lineHeight: headingLineHeight,
+    fontWeight: 700,
   },
   h5: {
-    fontSize: 20,
-    fontWeight: 700,
+    fontSize: 17,
     lineHeight: headingLineHeight,
+    fontWeight: 600,
   },
   h6: {
-    fontSize: 16,
-    fontWeight: 700,
+    fontSize: 15,
     lineHeight: headingLineHeight,
+    fontWeight: 600,
   },
   body1: {
-    fontSize: '0.875rem',
+    fontSize: '1rem',
   },
   body2: {
-    fontSize: '0.875rem',
+    fontSize: '0.9rem',
   },
   subtitle1: {
-    fontSize: '0.8rem',
+    fontSize: '0.85rem',
   },
   subtitle2: {
-    fontSize: '0.75rem',
+    fontSize: '0.8rem',
   },
 }
 

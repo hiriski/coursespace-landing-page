@@ -4,12 +4,12 @@ import { grey, common } from '@mui/material/colors'
 const palette: PaletteOptions = {
   mode: 'light',
   background: {
-    default: '#f7f7f7',
+    default: '#f2f5f5', //'#fdfdfd',
     paper: common.white,
   },
   text: {
-    primary: grey[800],
-    secondary: grey[600],
+    primary: grey[900],
+    secondary: '#717171', // grey[700],
     disabled: grey[500],
   },
 }

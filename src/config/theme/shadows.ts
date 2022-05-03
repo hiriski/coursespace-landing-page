@@ -2,9 +2,9 @@ import { Shadows } from '@mui/material/styles/shadows'
 
 const shadows: Shadows = [
   'none',
-  '0 8px 40px 0 rgb(0 0 0 / 4%)',
-  '0 8px 40px 0 rgb(0 0 0 / 8%)',
-  '0 12px 40px 0 rgb(0 0 0 / 12%)',
+  '0 10px 10px 0 rgb(0 0 0 / 3%)',
+  '0 15px 15px 0 rgb(0 0 0 / 5%)',
+  '0 22px 22px 0 rgb(0 0 0 /6%)',
   '0px 2px 4px -1px rgba(0,0,0,0.2),0px 4px 5px 0px rgba(0,0,0,0.14),0px 1px 10px 0px rgba(0,0,0,0.12)',
   '0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12)',
   '0px 3px 5px -1px rgba(0,0,0,0.2),0px 6px 10px 0px rgba(0,0,0,0.14),0px 1px 18px 0px rgba(0,0,0,0.12)',

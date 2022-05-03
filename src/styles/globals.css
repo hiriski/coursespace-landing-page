@@ -1,3 +1,9 @@
+:root {
+  --color-background: #f5f5f9;
+  --color-scrollbar: rgb(224, 224, 224);
+  --color-scrollbar-hover: #bbb;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -18,8 +24,8 @@
 }
 
 body {
-  /* DONT SET BACKGROUND COLOR RIGHT HERE! */
   /* background-color: var(--color-background); */
+  background-color: '#fff';
 }
 
 @-webkit-keyframes click_animation {
