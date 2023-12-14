@@ -1,0 +1,50 @@
+Searching 75 files for "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore"
+
+C:\Users\vinay\OneDrive\Documents\GitHub\coursespace-landing-page\src\components\home\feature.data.tsx:
+   14    {
+   15      title: 'Easy Accessable',
+   16:     description: 'Easy Accessable',
+   17      icon: <ArtTrackIcon />,
+   18    },
+   19    {
+   20      title: 'More Affordable Cost',
+   21:     description: 'More Affordable Cost',
+   22      icon: <AttachMoneyIcon />,
+   23    },
+   24    {
+   25      title: 'Flexible Study Time',
+   26:     description: 'Flexible Study Time',
+   27      icon: <LocalLibraryIcon />,
+   28    },
+   29    {
+   30      title: 'Consultation With Mentor',
+   31:     description: 'Consultation With Mentor',
+   32      icon: <ContactSupportIcon />,
+   33    },
+
+C:\Users\vinay\OneDrive\Documents\GitHub\coursespace-landing-page\src\components\home\mentors.data.ts:
+    8      category: 'UI/UX Design',
+    9      description:
+   10:       'UI/UX Design',
+   11      company: {
+   12        name: 'Grab',
+   ..
+   20      category: 'Machine Learning',
+   21      description:
+   22:       'Machine Learning',
+   23      company: {
+   24        name: 'Google',
+   ..
+   32      category: 'Android Development',
+   33      description:
+   34:       'Android Development',
+   35      company: {
+   36        name: 'Airbnb',
+   ..
+   44      category: 'Fullstack Development',
+   45      description:
+   46:       'Fullstack Development',
+   47      company: {
+   48        name: 'Microsoft',
+
+8 matches across 2 files
